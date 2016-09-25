@@ -1,0 +1,87 @@
+import java.util.Scanner;
+
+/**
+ * a program to read and print information on conference attendees
+ *
+ * @author Mark Young (A00000000)
+ * @version 1.0
+ */
+public class Conference
+{
+    public static final int MAX = 20;
+    public static final int STUDENT_FEE = 60;
+    public static final int OTHER_FEE = 100;
+
+    public static void main(String[] args)
+    {
+        Scanner kbd = new Scanner(System.in);
+
+        System.out.println("\n\n"
+            + "Conference Attendance\n"
+            + "---------------------\n\n"
+            + "This program collects information "
+            + "about people attending a conference.\n"
+            + "At most " + MAX + " people can attend the conference.\n\n"
+            + "Students are charged a reduced rate.\n");
+
+        Person[] people = new Person[MAX];
+        //Student[] students = new Student[MAX];
+        int numPeople = 0;
+        //int numStudents = 0;
+        int totalFees = 0;
+
+        for (int i = 0; i < MAX; i++)
+        {
+            System.out.print("Enter STUDENT OTHER or DONE: ");
+            String kind = kbd.next().toUpperCase();
+            kbd.nextLine();
+            if (kind.equals("STUDENT"))
+            {
+                System.out.print("Student's name: ");
+                String name = kbd.nextLine();
+                System.out.print("Student #: ");
+                int num = kbd.nextInt();
+                kbd.nextLine();
+                people[numPeople] = new Student(name, num);
+                numPeople++;
+                System.out.println("Charge them $" + STUDENT_FEE + ".");
+                totalFees += STUDENT_FEE;
+            }
+            else if (kind.equals("OTHER"))
+            {
+                System.out.print("Person's name: ");
+                String name = kbd.nextLine();
+                people[numPeople] = new Person(name);
+                numPeople++;
+                System.out.println("Charge them $" + OTHER_FEE + ".");
+                totalFees += OTHER_FEE;
+            }
+            else if (kind.equals("DONE"))
+            {
+                break;
+            }
+            else
+            {
+                System.out.println("I'm sorry, that's not a valid choice!");
+            }
+        }
+
+        // print out list of conference attendees and total amounts received
+        System.out.println();
+        System.out.println("People attending the conference:");
+        for (int i = 0; i < numPeople; i++)
+        {
+            System.out.println((i+1) + ") " + people[i]);
+        }
+        System.out.println();
+        System.out.println("Students attending the conference:");
+        //for (int i = 0; i < numStudents; i++)
+        //{
+        //    System.out.println((i+1) + ") " + students[i]);
+        //}
+        System.out.println();
+        System.out.println("Total fees collected: $" + totalFees + ".");
+        System.out.println();
+    }
+}
+

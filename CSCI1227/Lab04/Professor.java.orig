@@ -1,0 +1,48 @@
+/**
+ * DescribeProgramHere
+ *
+ * @author Mike Pratt -- A00320459
+ * @version 1.0
+ */
+
+import java.util.Scanner;
+
+public class Professor extends Person  
+{
+    private String department;
+    
+    public Professor(String initialName, String initialDept)
+    {
+        super(initialName);
+        department = initialDept;
+    }
+    
+    public Professor(String initialName)
+    {
+        super(initialName);
+        department = "Administration";
+    }
+    
+    public String getDepartment()
+    {
+        return department;
+    }  
+    
+    public void setDepartment(String newDepartment)
+    {
+        department = newDepartment;
+    }
+    
+    public void writeOutput()
+    {
+        super.writeOutput();
+    }
+    public String toString()
+    {
+        return super.toString() + " (" + department + ")";
+    }
+    
+
+    
+}
+

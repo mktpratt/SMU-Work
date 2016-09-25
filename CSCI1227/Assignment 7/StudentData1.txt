@@ -1,0 +1,22 @@
+Alice
+100 
+Bill
+100 
+Carol
+95 
+Doug A.
+100 
+Doug B.
+0 
+Ellen
+100 
+Francois
+92 
+Geety
+90 
+Henry
+70 
+Isabel
+100 
+Joseph
+80 

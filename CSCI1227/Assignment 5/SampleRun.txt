@@ -1,0 +1,158 @@
+<h3>Sample Run</h3>
+<p align=right>
+<a href="asgn.html">Return to assignment description</a>
+<p>
+Here is what the original version of the program should look like 
+when you run it.
+<blockquote>
+ <table cellpadding=1 bgcolor=black>
+  <tr>
+   <td>
+    <font color=white>
+     <pre width=80>
+<b><font color=lime>myoung</font><font color=lightBlue>@cs</font><font color=yellow>:0</font><font color=lightBlue>~/Assignments/A5</font><font color=lime>]</font></b><font color=cyan>java FigureInfo</font>
+
+
+Sorted Figure Info
+------------------
+
+This program reads in the sizes of several shapes then prints out
+information about them in order from smallest to largest.
+
+by Mark Young (A00000000) and ....
+
+NOTE:  currently INCOMPLETE
+
+Enter the width and height of a rectangle: <font color=cyan>20 10</font>
+Enter the width and height of an oval: <font color=cyan>30 4</font>
+Enter the width and height of a triangle: <font color=cyan>55 8</font>
+Enter the diameter of a circle: <font color=cyan>19</font>
+
+Type           Width    Height                Area           Perimeter
+----------     -----    ------           ---------           ---------
+Rectangle       20.0      10.0               200.0                60.0
+Oval            30.0       4.0                94.2                53.4
+Triangle        55.0       8.0               220.0               118.6
+Circle          19.0      19.0               283.5                59.7
+                                                                                
+     </pre>
+    </font>
+   </td>
+  </tr>
+ </table>
+</blockquote>
+Here is what it should look like when you're done.
+<blockquote>
+ <table cellpadding=1 bgcolor=black>
+  <tr>
+   <td>
+    <font color=white>
+     <pre width=80>
+<b><font color=lime>myoung</font><font color=lightBlue>@cs</font><font color=yellow>:0</font><font color=lightBlue>~/Assignments/A5</font><font color=lime>]</font></b><font color=cyan>java FigureInfo</font>
+
+
+Sorted Figure Info
+------------------
+
+This program reads in the sizes of several shapes then prints out
+information about them in order from smallest to largest.
+
+by Mark Young (A00000000) and ....
+
+Enter the width and height of a rectangle: <font color=cyan>30 40</font>
+Enter the width and height of a rectangle: <font color=cyan>10 20</font>
+Enter the width and height of a rectangle: <font color=cyan>50 60</font>
+Enter the width and height of an oval: <font color=cyan>10 20</font>
+Enter the width and height of an oval: <font color=cyan>50 50</font>
+Enter the width and height of an oval: <font color=cyan>30 40</font>
+Enter the width and height of a triangle: <font color=cyan>20 50</font>
+Enter the width and height of a triangle: <font color=cyan>10 30</font>
+Enter the width and height of a triangle: <font color=cyan>30 40</font>
+Enter the diameter of a circle: <font color=cyan>50</font>
+Enter the diameter of a circle: <font color=cyan>700</font>
+Enter the diameter of a circle: <font color=cyan>20</font>
+
+Type           Width    Height                Area           Perimeter
+----------     -----    ------           ---------           ---------
+Triangle        10.0      30.0               150.0                71.6
+Oval            10.0      20.0               157.1                47.1
+Rectangle       10.0      20.0               200.0                60.0
+Circle          20.0      20.0               314.2                62.8
+Triangle        20.0      50.0               500.0               123.9
+Triangle        30.0      40.0               600.0               120.0
+Oval            30.0      40.0               942.5               110.0
+Rectangle       30.0      40.0              1200.0               140.0
+Oval            50.0      50.0              1963.5               157.1
+Circle          50.0      50.0              1963.5               157.1
+Rectangle       50.0      60.0              3000.0               220.0
+Circle         700.0     700.0            384845.1              2199.1
+                                                                                
+     </pre>
+    </font>
+   </td>
+  </tr>
+ </table>
+</blockquote>
+<a name="withRedirection">
+Here is what it looks like when you do input redirection.
+</a>
+<blockquote>
+ <table cellpadding=1 bgcolor=black>
+  <tr>
+   <td>
+    <font color=white>
+     <pre width=80>
+<b><font color=lime>myoung</font><font color=lightBlue>@cs</font><font color=yellow>:0</font><font color=lightBlue>~/Assignments/A5</font><font color=lime>]</font></b><font color=cyan>java FigureInfo &lt;SomeFigures.txt</font>
+
+
+Sorted Figure Info
+------------------
+
+This program reads in the sizes of several shapes then prints out
+information about them in order from smallest to largest.
+
+by Mark Young (A00000000) and ....
+
+Enter the width and height of a rectangle: Enter the width and height of a recta
+ngle: Enter the width and height of a rectangle: Enter the width and height of a
+n oval: Enter the width and height of an oval: Enter the width and height of an 
+oval: Enter the width and height of a triangle: Enter the width and height of a 
+triangle: Enter the width and height of a triangle: Enter the diameter of a circ
+le: Enter the diameter of a circle: Enter the diameter of a circle: 
+Type           Width    Height                Area           Perimeter
+----------     -----    ------           ---------           ---------
+Triangle        10.0      30.0               150.0                71.6
+Oval            10.0      20.0               157.1                47.1
+Rectangle       10.0      20.0               200.0                60.0
+Circle          20.0      20.0               314.2                62.8
+Triangle        20.0      50.0               500.0               123.9
+Triangle        30.0      40.0               600.0               120.0
+Oval            30.0      40.0               942.5               110.0
+Rectangle       30.0      40.0              1200.0               140.0
+Oval            50.0      50.0              1963.5               157.1
+Circle          50.0      50.0              1963.5               157.1
+Rectangle       50.0      60.0              3000.0               220.0
+Circle         700.0     700.0            384845.1              2199.1
+                                                                                
+     </pre>
+    </font>
+   </td>
+  </tr>
+ </table>
+</blockquote>
+     </pre>
+    </font>
+   </td>
+  </tr>
+ </table>
+</blockquote>
+<hr />
+Return to
+<a href="http://cs.smu.ca/~myoung/csci1227/Homepage.html">course homepage</a>
+/
+<a href="http://cs.smu.ca/~myoung/csci1227/outline.html">outline page</a>
+/
+<a href="asgn.html">assignment description</a>
+<hr />
+</body>
+</html>

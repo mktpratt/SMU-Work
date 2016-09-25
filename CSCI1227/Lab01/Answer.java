@@ -1,0 +1,62 @@
+/**
+ * Program that asks for an answer from user
+ *
+ * @author Mike Pratt -- A00320459
+ * @version 1.0
+ */
+
+import java.util.Scanner;
+
+public class Answer
+{
+
+    public static void main(String[] args)
+    {
+
+        Scanner kbd = new Scanner (System.in);
+        String userQuestion;
+        int split;
+
+        System.out.println("\n\nAnswer Program");
+        System.out.println("--------------\n");
+        System.out.println("by Mike Pratt (A00320459)\n");
+        System.out.println("\n");
+        System.out.println("This program answers questions"
+                           + "entered by the user.");
+
+        System.out.println("Ask a question to the program:");
+        userQuestion = kbd.nextLine();
+        if (!userQuestion.endsWith("?"))
+            System.out.println("That is not a question!");
+        else if (userQuestion.startsWith("Who"))
+            System.out.println("George Washington.");
+        else if (userQuestion.startsWith("What"))
+            System.out.println("The Eiffel Tower.");
+        else if (userQuestion.startsWith("When"))
+            System.out.println("Right now!");
+        else if (userQuestion.startsWith("Where"))
+            System.out.println("Here.");
+        else if (userQuestion.startsWith("Why"))
+            System.out.println("Why not?");
+        else
+        {
+            split = userQuestion.length();
+            switch (split % 3)
+            {
+            case 0:
+                System.out.println("I'll think about it.");
+                break;
+            case 1:
+                System.out.println("That's an interesting question.");
+                break;
+            case 2:
+                System.out.println("I think you know the answer to that question!");
+                break;
+            }
+        }
+
+
+
+    }
+}
+

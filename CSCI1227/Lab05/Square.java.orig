@@ -1,0 +1,57 @@
+/**
+ * DescribeProgramHere
+ *
+ * @author Mike Pratt -- A00320459
+ * @version 1.0
+ */
+
+import java.util.Scanner;
+
+public class Square implements Measurable
+{
+    private double edgeLength;
+
+    public Square(double size)
+    {
+        edgeLength = size;
+    }
+    
+    public double getHeight()
+    {
+        return edgeLength;
+    }
+
+    public double getWidth()
+    {
+        return edgeLength;
+    }
+    
+    public double getPerimeter()
+    {
+        return 4 * edgeLength;
+    }
+
+    public double getArea()
+    {
+        return Math.pow(edgeLength, 2);
+    }
+    
+    public double getEdgeLength()
+    {
+        return edgeLength;
+    }
+    
+    public boolean equals(Square otherObject)
+    {
+        boolean isEqual = false;
+        if ((otherObject != null) &&
+            (otherObject instanceof Square))
+        {
+            Square otherSquare = (Square)otherObject;
+            isEqual = (this.getEdgeLength() == otherSquare.getEdgeLength());
+        }
+        return isEqual;    
+            
+    }
+}
+

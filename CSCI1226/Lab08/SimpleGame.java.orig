@@ -1,0 +1,48 @@
+public class SimpleGame
+{
+    public static final int SIDES = 6;
+    public static void main(String[] args)
+    {
+        System.out.print("\n\n"
+            + "Simple Dice Game\n"
+            + "----------------\n\n");
+
+        // start user at position 1 with 0 rolls
+        int position = 1;
+        int numRolls = 0;
+
+        // repeat
+        do
+        {
+            
+            
+            // roll two dice
+            int d1 = 1 + (int)(SIDES * Math.random());
+            int d2 = 1 + (int)(SIDES * Math.random());
+            
+            if (d1 == 6 && d2 == 6)
+            {
+                position = 100;
+                System.out.println("You rolled a 12! Congratulations!");
+                numRolls++;
+            }
+            else
+            {
+                // add one to the number of rolls
+                numRolls++;
+
+                // move forward that many positions
+                position += d1 + d2;
+
+                // report the roll and new position
+                System.out.println("You rolled a " + (d1 + d2)
+                    + " and you're now in position " + position);
+            }
+            // until the user reaches or passes the 100 position
+        } while (position < 100); 
+
+        // report how many rolls it took
+        System.out.println("\nIt took you " + numRolls + " rolls "
+            + "to win this game.\n");
+    }
+}
